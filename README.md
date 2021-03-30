@@ -9,5 +9,8 @@
 - [ ] Remove form from blogpage
 - [ ] For now, we can put podcasts on categories page only. Basically, every category page can have links to blogs and podcasts both.
 - [ ] Contact page can used as register/login page. We can redirect to it from home page.
-- [ ] Add avatar login instead of searchbar.
-
+- [ ] Add avatar login.
+- [ ] Optimise search feature for podcasts via tagging.
+- [ ] Backend Integration.
+- [ ] BETA 1.0 DEV to be hosted on Heroku.
+- [ ] Get Domain, Cloud Space, Hosting Service, Certificates.

@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Category Page - Abstract</title>
+	<title>Abstract</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -51,28 +51,22 @@
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation sf-menu">
 					<li><a href="index.html" title="">Home</a></li>									
-					<li class="has-children current">
-						<a href="category.html" title="">Categories</a>
-						<ul class="sub-menu">
-			            <li><a href="category.html">Wordpress</a></li>
-			            <li><a href="category.html">HTML</a></li>
-			            <li><a href="category.html">Photography</a></li>
-			            <li><a href="category.html">UI</a></li>
-			            <li><a href="category.html">Mockups</a></li>
-			            <li><a href="category.html">Branding</a></li>
-			         </ul>
-					</li>
 					<li class="has-children">
-						<a href="single-standard.html" title="">Blog</a>
+						<a href="categories.html" title="">Categories</a>
 						<ul class="sub-menu">
-			            <li><a href="single-video.html">Video Post</a></li>
-			            <li><a href="single-audio.html">Audio Post</a></li>
-			            <li><a href="single-gallery.html">Gallery Post</a></li>
-			            <li><a href="single-standard.html">Standard Post</a></li>
+							<li><a href="it-category.html">IT</a></li>
+							<li><a href="finance-category.html">Finance</a></li>
+							<li><a href="consulting-category.html">Consulting</a></li>
 			         </ul>
 					</li>
-					<li><a href="style-guide.html" title="">Styles</a></li>
-					<li><a href="about.html" title="">About</a></li>	
+					<li class="has-children current">
+						<a href="blog.html" class="current" title="">Blog</a>
+						<ul class="sub-menu">
+							<li><a href="it-blog.html">IT</a></li>
+							<li><a href="finance-blog.html">Finance</a></li>
+							<li><a href="consulting-blog.html">Consulting</a></li>
+			         </ul>
+					</li>
 					<li><a href="contact.html" title="">Contact</a></li>										
 				</ul>
 			</nav> <!-- end main-nav-wrap -->
@@ -101,20 +95,9 @@
    </header> <!-- end header -->
 
 
-   <!-- page header
-   ================================================== -->
-   <section id="page-header">
-   	<div class="row current-cat">
-   		<div class="col-full">
-   			<h1>Category: Photography</h1>
-   		</div>   		
-   	</div>
-   </section>
-
-   
    <!-- masonry
    ================================================== -->
-   <section id="bricks" class="with-top-sep">
+   <section id="bricks">
 
    	<div class="row masonry">
 
@@ -122,6 +105,73 @@
          <div class="bricks-wrapper">
 
          	<div class="grid-sizer"></div>
+
+         	<div class="brick entry featured-grid animate-this">
+         		<div class="entry-content">
+         			<div id="featured-post-slider" class="flexslider">
+			   			<ul class="slides">
+
+				   			<li>
+				   				<div class="featured-post-slide">
+
+						   			<div class="post-background" style="background-image:url('images/thumbs/featured/featured-1.jpg');"></div>
+
+								   	<div class="overlay"></div>			   		
+
+								   	<div class="post-content">
+								   		<ul class="entry-meta">
+												<li>September 06, 2016</li> 
+												<li><a href="#" >Naruto Uzumaki</a></li>				
+											</ul>	
+
+								   		<h1 class="slide-title"><a href="single-standard.html" title="">Minimalism Never Goes Out of Style</a></h1> 
+								   	</div> 				   					  
+				   			
+				   				</div>
+				   			</li> <!-- /slide -->
+
+				   			<li>
+				   				<div class="featured-post-slide">
+
+						   			<div class="post-background" style="background-image:url('images/thumbs/featured/featured-2.jpg');"></div>
+
+								   	<div class="overlay"></div>			   		
+
+								   	<div class="post-content">
+								   		<ul class="entry-meta">
+												<li>August 29, 2016</li>
+												<li><a href="#">Sasuke Uchiha</a></li>					
+											</ul>	
+
+								   		<h1 class="slide-title"><a href="single-standard.html" title="">Enhancing Your Designs with Negative Space</a></h1>
+						   			</div>		   				   					  
+				   			
+				   				</div>
+				   			</li> <!-- /slide -->
+
+				   			<li>
+				   				<div class="featured-post-slide">
+
+						   			<div class="post-background" style="background-image:url('images/thumbs/featured/featured-3.jpg');;"></div>
+
+								   	<div class="overlay"></div>			   		
+
+								   	<div class="post-content">
+								   		<ul class="entry-meta">
+												<li>August 27, 2016</li>
+												<li><a href="#" class="author">Naruto Uzumaki</a></li>					
+											</ul>	
+
+								   		<h1 class="slide-title"><a href="single-standard.html" title="">Music Album Cover Designs for Inspiration</a></h1>
+						   			</div>
+
+				   				</div>
+				   			</li> <!-- end slide -->
+
+				   		</ul> <!-- end slides -->
+				   	</div> <!-- end featured-post-slider -->        			
+         		</div> <!-- end entry content -->         		
+         	</div>
 
          	<article class="brick entry format-standard animate-this">
 
@@ -179,6 +229,7 @@
                
         		</article> <!-- end article -->
 
+            <!-- format audio here -->
             <article class="brick entry format-audio animate-this">
 
                <div class="entry-thumb">
@@ -187,7 +238,7 @@
                   </a>
 
                   <div class="audio-wrap">
-                  	<audio id="player2" src="media/AirReview-Landmarks-02-ChasingCorporate.mp3" width="100%" height="42" controls="controls"></audio>                  	
+                  	<audio id="player" src="media/AirReview-Landmarks-02-ChasingCorporate.mp3" width="100%" height="42" controls="controls"></audio>                  	
                   </div>
                </div>
 
@@ -211,7 +262,7 @@
                
         		</article> <!-- /article -->
 
-         	<article class="brick entry format-quote animate-this">
+         	<article class="brick entry format-quote animate-this" >
 
                <div class="entry-thumb">                  
 	               <blockquote>
@@ -223,7 +274,7 @@
 
         		</article> <!-- end article -->
 
-         	<article class="brick entry format-standard animate-this">
+         	<article class="brick entry animate-this">
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
@@ -251,7 +302,7 @@
                
         		</article> <!-- end article -->
 
-            <article class="brick entry format-standard animate-this">
+            <article class="brick entry animate-this" >
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
@@ -389,7 +440,7 @@
                
         		</article> <!-- end article -->
 
-        		<article class="brick entry format-standard animate-this">
+        		<article class="brick entry animate-this">
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
@@ -417,7 +468,7 @@
                
         		</article> <!-- end article -->
 
-        		<article class="brick entry format-standard animate-this">
+        		<article class="brick entry animate-this">
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
@@ -467,7 +518,7 @@
 
    	</div>
 
-   </section> <!-- bricks -->
+   </section> <!-- end bricks -->
 
    
    <!-- footer
@@ -569,6 +620,7 @@
    ================================================== --> 
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
+   <script src="js/jquery.appear.js"></script>
    <script src="js/main.js"></script>
 
 </body>

@@ -32,11 +32,51 @@ header .logo a{
 
 .block-1-2 .bgrid{
 
-  width:50%;
+  width:48%;
   padding:15px;
+  margin: 1%;
+  border:1px solid #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 8px 8px 0 #E5E5E5;
+  height:35vh;
 }
+
+@media only screen and (max-width:750px) {
+
+.block-1-2 .bgrid {
+		height:50vh;
+	}
+
+}
+
+@media only screen and (max-width:550px) {
+
+.block-1-2 .bgrid {
+		height:70vh;
+	}
+
+}
+.symbol{
+  position: relative;
+  font-size: 4rem;
+  color: #43B9AA;
+
+
+}
+.bricks-wrapper .entry-thumb .thumb-link::before{
+background:rgba(68, 185, 170, 0.8);
+}
+
+/* BLOG */
+.scholar-blog p{
+  margin-bottom: 1rem;
+}
+.scholar-blog h3{
+  margin-top:5rem;
+  }
 
 /* Footer */
 footer{
   background-color: #DCDCDC;
+  margin-top: 20px;
 }

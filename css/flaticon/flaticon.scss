@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?40645cf4986d86bda08242a534261db5") format("truetype"),
+url("./flaticon.woff?40645cf4986d86bda08242a534261db5") format("woff"),
+url("./flaticon.woff2?40645cf4986d86bda08242a534261db5") format("woff2"),
+url("./flaticon.eot?40645cf4986d86bda08242a534261db5#iefix") format("embedded-opentype"),
+url("./flaticon.svg?40645cf4986d86bda08242a534261db5#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "box": "\f101",
+    "coding": "\f102",
+    "connection": "\f103",
+    "consultation": "\f104",
+    "global": "\f105",
+    "goal": "\f106",
+    "money": "\f107",
+    "pie-chart": "\f108",
+    "podcast": "\f109",
+    "project-management": "\f10a",
+);
+
+.flaticon-box:before {
+    content: map-get($flaticon-map, "box");
+}
+.flaticon-coding:before {
+    content: map-get($flaticon-map, "coding");
+}
+.flaticon-connection:before {
+    content: map-get($flaticon-map, "connection");
+}
+.flaticon-consultation:before {
+    content: map-get($flaticon-map, "consultation");
+}
+.flaticon-global:before {
+    content: map-get($flaticon-map, "global");
+}
+.flaticon-goal:before {
+    content: map-get($flaticon-map, "goal");
+}
+.flaticon-money:before {
+    content: map-get($flaticon-map, "money");
+}
+.flaticon-pie-chart:before {
+    content: map-get($flaticon-map, "pie-chart");
+}
+.flaticon-podcast:before {
+    content: map-get($flaticon-map, "podcast");
+}
+.flaticon-project-management:before {
+    content: map-get($flaticon-map, "project-management");
+}

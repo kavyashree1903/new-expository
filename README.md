@@ -1,4 +1,4 @@
-# new-expository
+# Expository 🚀
 
 - [ ] Replace home page with blog page and link individual blogs to blog page
 - [ ] Make the categories on about page (to-be home page) in boxes and add icons maybe

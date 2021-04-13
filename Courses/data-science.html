@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/data-science.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Project Expository<span>Data Science Course</span></h1>
+        <br>
+          Made with  ❤  by Dipanshi Bansal, Adit Sawant, Amey Pate,<br/>
+           Maithil Mehta, Rudhir Mehra
+        </div>
+      </header>
+      <section id="sec-course-stuff">
+        <h2>SYLLABUS</h2>
+        <div>
+          <h3>Notes</h3>
+          <p>
+            Students are responsible for all announcements as well as for taking
+            their own notes in class. Absences should be pre-excused with the
+            instructor. There will NOT be opportunities to make up for unexcused
+            absences or unsubmitted work. In case of emergencies, please contact
+            the instructor as soon as possible and arrangements will be handled
+            on a case-by-case basis. Supplementary material will be provided
+            here, on the course website.
+          </p>
+        </div>
+
+        <h2>Module 1</h2>
+        <div>
+          <h3>Module 1</h3>
+          <iframe
+            id="pdf-js-viewer"
+            src="../Courses/data-science-pdfs/module1.pdf"
+            title="webviewer"
+            frameborder="0"
+            width="500"
+            height="600"
+          ></iframe>
+          <h3>Self Check</h3>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1TZAH20chkG2IPVYL5Lwtz9Ru337TCKdi/view?usp=sharing"
+              >Assignment</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/13VYb4VMIJTQlfbhHw6q5qJhy8gQQazRw/view?usp=sharing"
+              >Solution</a
+            >
+          </li>
+        </div>
+        <h2>Module 2</h2>
+        <div>
+            <h3>Module 2</h3>
+            <iframe
+              id="pdf-js-viewer"
+              src="../Courses/data-science-pdfs/module2.pdf"
+              title="webviewer"
+              frameborder="0"
+              width="500"
+              height="600"
+            ></iframe>
+            <h3>Self Check</h3>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1lbUU7OCqAsRrBLpDbP0uqId02vl6iqMf/view?usp=sharing"
+                >NumPy Assignment</a
+              >
+            </li>
+            <li>
+                <a
+                  href="https://drive.google.com/file/d/1jilfYF-ajlRVC7zU26VOBXSaAxiQ_qkp/view?usp=sharing"
+                  >Pandas Assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1pITAXe8D2B_bQU4tB1VzgQAMoXkmcSfq/view?usp=sharing"
+                  >NumPy Solution</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1u7mTlj9ojMVuBgPt-FexZPSKSJZ85PhX/view?usp=sharing"
+                  >Pandas Solution</a
+                >
+              </li>
+          </div>
+          <h2>Module 3</h2>
+        <div>
+            <h3>Module 3</h3>
+            <iframe
+              id="pdf-js-viewer"
+              src="../Courses/data-science-pdfs/module3.pdf"
+              title="webviewer"
+              frameborder="0"
+              width="500"
+              height="600"
+            ></iframe>
+            <h3>Self Check</h3>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1lbUU7OCqAsRrBLpDbP0uqId02vl6iqMf/view?usp=sharing"
+                >NumPy Assignment</a
+              >
+            </li>
+            <li>
+                <a
+                  href="https://drive.google.com/file/d/1jilfYF-ajlRVC7zU26VOBXSaAxiQ_qkp/view?usp=sharing"
+                  >Pandas Assignment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1pITAXe8D2B_bQU4tB1VzgQAMoXkmcSfq/view?usp=sharing"
+                  >NumPy Solution</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1u7mTlj9ojMVuBgPt-FexZPSKSJZ85PhX/view?usp=sharing"
+                  >Pandas Solution</a
+                >
+              </li>
+          </div>
+      </section>
+    </article>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#sec-course-stuff div").slideUp();
+      $("#sec-course-stuff h2").click(function () {
+        //slide up all the link lists
+        $("#sec-course-stuff div").slideUp();
+        //slide down the link list below the h3 clicked - only if its closed
+        if (!$(this).next().is(":visible")) {
+          $(this).next().slideDown();
+        }
+      });
+    });
+  </script>
+</html>

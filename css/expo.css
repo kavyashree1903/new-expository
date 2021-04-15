@@ -41,7 +41,7 @@ header .logo a{
   height:35vh;
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:850px) {
 
 .block-1-2 .bgrid {
 		height:50vh;
@@ -74,9 +74,17 @@ background:rgba(68, 185, 170, 0.8);
 .scholar-blog h3{
   margin-top:5rem;
   }
-
+.button-div{
+  margin-top:4rem;
+  text-align: center;
+}
 /* Footer */
 footer{
   background-color: #DCDCDC;
   margin-top: 20px;
+}
+/* Video */
+
+#vidBox{
+  z-index: 1000;
 }
